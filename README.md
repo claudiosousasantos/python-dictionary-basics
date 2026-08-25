@@ -1,10 +1,11 @@
 # Python Dictionary Basics
 
-A set of small demo functions covering common dictionary operations in Python, shown across two different examples.
+A set of small demo functions covering common dictionary operations in Python, shown across three different examples.
 
 ## Files
 - **dictionary_basics.py** — dictionary operations using a people/ages example
 - **settings_dictionary_demo.py** — the same operations applied to an app settings example
+- **contacts_dictionary_demo.py** — the same operations applied to a contacts lookup example
 
 ## What's covered
 - **Basic operations**: creating a dictionary, accessing values by key, adding new key-value pairs
@@ -15,10 +16,11 @@ A set of small demo functions covering common dictionary operations in Python, s
 ```bash
 python dictionary_basics.py
 python settings_dictionary_demo.py
+python contacts_dictionary_demo.py
 ```
 
 ## What I learned
 - Dictionaries store data as key-value pairs and support fast lookups by key
 - `.items()` is more readable than looping over keys and indexing separately
 - `.get(key, default)` is safer than `dict[key]` when a key might not exist
-- The same dictionary patterns apply naturally across different real-world contexts (people data vs. config/settings data)
+- The same dictionary patterns apply naturally across different real-world contexts
