@@ -25,6 +25,20 @@ def demo_safe_get():
     print(contacts.get("Alice", "Not found"))   # existing key -> "alice@example.com"
     print(contacts.get("Dave", "Not found"))    # missing key -> "Not found" (no crash)
 
+# Updating, deleting, and checking whether a key exists.
+def demo_update_and_delete():
+    contacts = {"Alice": "alice@example.com", "Bob": "555-1234", "Carol": "carol@example.com"}
+
+    contacts["Bob"] = "bob@example.com"          # Update an existing value
+    print("\nAfter update:", contacts["Bob"])
+
+    removed = contacts.pop("Carol")              # Remove a key and get its value back
+    print("Removed:", removed)
+
+    print("Carol in contacts?", "Carol" in contacts)   # Membership check -> False
+    print("Remaining contacts:", list(contacts))       # -> ['Alice', 'Bob']
+
 demo_basic_dict_operations()
 demo_dict_iteration()
 demo_safe_get()
+demo_update_and_delete()
