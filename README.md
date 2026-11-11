@@ -24,3 +24,4 @@ python contacts_dictionary_demo.py
 - `.items()` is more readable than looping over keys and indexing separately
 - `.get(key, default)` is safer than `dict[key]` when a key might not exist
 - The same dictionary patterns apply naturally across different real-world contexts
+- **Updating and deleting**: changing an existing value, removing a key with `.pop()`, and checking whether a key exists with `in`
